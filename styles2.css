@@ -1,0 +1,82 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #5a8cb8, #838386);
+}
+
+#game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#306da5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+    width: 350px;
+    padding: 20px;
+    height: auto;
+}
+
+h1 {
+    margin: 20px 0;
+    color: #333;
+}
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+    gap: 5px;
+    background-color: rgb(234, 231, 231);
+    margin-bottom: 20px;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    max-width: 260px;
+    height: 260px;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cell:hover{
+    box-shadow: 0 0 10px white;
+}
+#status {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#reset {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    background-color: #282c34;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5%;
+}
+#reset:hover
+{
+    box-shadow: 0 0 20px white;
+}
